@@ -1,0 +1,114 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(35, 35, 35);
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  header {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    a {
+      text-decoration: none;
+      color: rgb(113, 113, 113);
+      transition: all 1s;
+      &:hover {
+        color: rgb(236, 156, 61);
+      }
+    }
+    span {
+      transition: all 1s;
+    }
+  }
+  h1 {
+    text-align: center;
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+    img {
+      width: 45px;
+      height: 45px;
+    }
+  }
+  .greeting_text {
+    width: 80%;
+    text-align: center;
+    margin: 10px auto;
+    color: rgb(113, 113, 113);
+  }
+  .separator {
+    text-align: center;
+    margin-top: 15px;
+    color: rgb(236, 156, 61);
+  }
+  h2 {
+    text-align: center;
+    color: rgb(236, 156, 61);
+    font-size: 26px;
+  }
+  .servise_container {
+    display: flex;
+    color: rgb(236, 156, 61);
+    justify-content: space-around;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  .container_site {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    a {
+      text-decoration: none;
+      color: rgb(236, 156, 61);
+      font-family: "Oswald", sans-serif;
+    }
+    &_item {
+      margin-top: 15px;
+      transition: all 1s;
+      width: 255px;
+      height: 180px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border: 1px solid rgb(113, 113, 113);
+    }
+  }
+  footer {
+    height: 75px;
+    border-top: 3px solid rgb(236, 156, 61);
+    display: flex;
+    justify-content: space-around;
+
+    a {
+      margin-top: 25px;
+      color: rgb(113, 113, 113);
+      text-decoration: none;
+    }
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    max-width: fit-content;
+    .container_site {
+      justify-content: center;
+    }
+  }
+}
+@media (max-width: 540px) {
+  .container {
+    max-width: 320px;
+    .container_site {
+      justify-content: center;
+    }
+  }
+}
+@media (max-width: 940px) {
+  max-width: 540px;
+  .container_site {
+    justify-content: center;
+  }
+}
